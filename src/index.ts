@@ -1,6 +1,13 @@
-const main = () => {
-    // eslint-disable-next-line no-console
-    console.log('Hello, world!');
-};
+import express, { Request, Response } from 'express';
 
-main();
+const port = process.env.PORT ? +process.env.PORT : 8081;
+const app = express();
+
+app.get('/', (req: Request, res: Response) => {
+    res.send(`Hello From Backend Server (${port})`);
+});
+
+app.listen(port, () => {
+    // eslint-disable-next-line no-console
+    console.log(`Listening on port ${port}`);
+});
