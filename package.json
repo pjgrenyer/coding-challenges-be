@@ -1,7 +1,7 @@
 {
-    "name": "node-typescript-template",
+    "name": "coding-challenges-be",
     "version": "1.0.1",
-    "description": "A template node typescript project",
+    "description": "Coding Challenges: Back End",
     "main": "index.js",
     "scripts": {
         "prepare": "husky install",
